@@ -1,0 +1,66 @@
+/* =========================
+   HOME PAGE UI (Apple style)
+   ========================= */
+
+.home-card {
+  max-width: 420px;
+  margin-top: 40px;
+}
+
+/* Title */
+.home-card h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Description text */
+.home-card .section-desc {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.home-card .section-desc.small {
+  margin-top: 16px;
+  font-size: 13px;
+}
+
+/* Color preview */
+.home-card .preview {
+  height: 180px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  background: #000;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.05);
+}
+
+/* Color input */
+.home-card input[type="color"] {
+  margin-bottom: 18px;
+}
+
+/* Code boxes spacing */
+.home-card .code-box {
+  margin-top: 12px;
+}
+
+/* Buttons hover polish */
+.home-card .code-box button {
+  transition: background .2s ease, transform .15s ease;
+}
+
+.home-card .code-box button:hover {
+  transform: translateY(-1px);
+}
+
+/* Mobile polish */
+@media (max-width: 480px) {
+  .home-card {
+    padding: 24px;
+  }
+
+  .home-card h3 {
+    font-size: 22px;
+  }
+}

@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>ColorTool | Palettes</title>
+
+  <!-- Global styles -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Palettes page only -->
+  <link rel="stylesheet" href="palettes.css">
 </head>
 <body>
 
 <nav>
-  <h2>🎨 ColorTool</h2>
+  <h2>ColorTool</h2>
   <div>
-    <a href="index.html">Home</a>
-    <a class="active" href="palettes.html">Palettes</a>
+    <a class="active" href="index.html">Home</a>
+    <a href="palettes.html">Palettes</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="gradient.html">Gradient</a>
   </div>
 </nav>
 
-<section>
-  <h3>Discover Palettes</h3>
+<section class="palettes-section">
+  <h3>Discover beautiful color palettes</h3>
+
+  <p class="section-desc">
+    Hand-picked and randomly generated palettes to inspire your next design.
+  </p>
+
   <div id="palettes"></div>
+
+  <p class="section-desc load-more">
+    Scroll to load more palettes
+  </p>
 </section>
 
 <script src="palettes.js"></script>

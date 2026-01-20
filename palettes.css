@@ -1,0 +1,73 @@
+/* ==============================
+   PALETTES PAGE UI (Apple style)
+   ============================== */
+
+.palettes-section {
+  padding-top: 50px;
+}
+
+/* Title */
+.palettes-section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Description */
+.palettes-section .section-desc {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+/* Load more hint */
+.palettes-section .load-more {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+/* Palette grid polish */
+#palettes {
+  margin-top: 10px;
+}
+
+/* Palette hover micro-interaction */
+.palette {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.palette:hover {
+  transform: translateY(-6px);
+}
+
+/* Palette actions text polish */
+.actions button {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Save button highlight */
+.actions button:last-child {
+  color: var(--accent);
+}
+
+/* Empty loading feel (optional future) */
+#palettes:empty::after {
+  content: "Loading palettes…";
+  display: block;
+  text-align: center;
+  color: var(--muted);
+  padding: 40px 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .palettes-section h3 {
+    font-size: 22px;
+  }
+
+  .palettes-section .section-desc {
+    font-size: 14px;
+  }
+}

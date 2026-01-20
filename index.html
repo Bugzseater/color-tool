@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>ColorTool | Home</title>
+
+  <!-- Global styles -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Home page UI only -->
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
 <nav>
-  <h2>🎨 ColorTool</h2>
+  <h2>ColorTool</h2>
   <div>
     <a class="active" href="index.html">Home</a>
     <a href="palettes.html">Palettes</a>
@@ -17,21 +21,30 @@
   </div>
 </nav>
 
-<section class="card">
-  <h3>Pick a Color</h3>
+<section class="card home-card">
+  <h3>Pick a color you love</h3>
+
+  <p class="section-desc">
+    Instantly get HEX and RGB values for any color.
+  </p>
 
   <div class="preview" id="preview"></div>
+
   <input type="color" id="picker">
 
   <div class="code-box">
-    <span id="hex">#000000</span>
-    <button id="copyHex">Copy</button>
+    <span>HEX: <strong id="hex">#000000</strong></span>
+    <button id="copyHex">Copy HEX</button>
   </div>
 
   <div class="code-box">
-    <span id="rgb">rgb(0,0,0)</span>
-    <button id="copyRgb">Copy</button>
+    <span>RGB: <strong id="rgb">rgb(0,0,0)</strong></span>
+    <button id="copyRgb">Copy RGB</button>
   </div>
+
+  <p class="section-desc small">
+    Copied values can be used directly in CSS or design tools.
+  </p>
 </section>
 
 <script src="picker.js"></script>
