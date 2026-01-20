@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ColorTool | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🎨 ColorTool</h2>
+  <div>
+    <a class="active" href="index.html">Home</a>
+    <a href="palettes.html">Palettes</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="gradient.html">Gradient</a>
+  </div>
+</nav>
+
+<section class="card">
+  <h3>Pick a Color</h3>
+
+  <div class="preview" id="preview"></div>
+  <input type="color" id="picker">
+
+  <div class="code-box">
+    <span id="hex">#000000</span>
+    <button id="copyHex">Copy</button>
+  </div>
+
+  <div class="code-box">
+    <span id="rgb">rgb(0,0,0)</span>
+    <button id="copyRgb">Copy</button>
+  </div>
+</section>
+
+<script src="picker.js"></script>
+</body>
+</html>

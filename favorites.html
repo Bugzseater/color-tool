@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ColorTool | Favorites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🎨 ColorTool</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="palettes.html">Palettes</a>
+    <a class="active" href="favorites.html">Favorites</a>
+  </div>
+</nav>
+
+<section>
+  <h3>Your Favorite Palettes ❤️</h3>
+  <div id="favorites"></div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">×</span>
+    <h3>Palette Details</h3>
+    <div id="modalColors"></div>
+    <button id="copyAll">Copy All</button>
+  </div>
+</div>
+
+<script src="favorites.js"></script>
+</body>
+</html>

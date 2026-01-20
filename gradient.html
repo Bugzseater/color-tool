@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ColorTool | Gradient Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>🎨 ColorTool</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="palettes.html">Palettes</a>
+    <a href="favorites.html">Favorites</a>
+    <a class="active" href="gradient.html">Gradient</a>
+  </div>
+</nav>
+
+<section class="card">
+  <h3>Gradient Generator</h3>
+
+  <div id="gradientPreview" class="preview"></div>
+
+  <label>Type</label>
+  <select id="type">
+    <option value="linear">Linear</option>
+    <option value="radial">Radial</option>
+  </select>
+
+  <label>Angle (Linear)</label>
+  <input type="range" id="angle" min="0" max="360" value="90">
+  <span id="angleVal">90°</span>
+
+  <div id="colors">
+    <input type="color" value="#ff6b6b">
+    <input type="color" value="#4ecdc4">
+  </div>
+
+  <button id="addColor">+ Add Color</button>
+  <button id="random">🎲 Random</button>
+
+  <div class="code-box">
+    <span id="cssCode"></span>
+    <button id="copyCss">Copy</button>
+  </div>
+
+  <div class="code-box">
+  <span id="tailwindCode"></span>
+  <button id="copyTailwind">Tailwind</button>
+</div>
+
+<div class="code-box">
+  <span id="cssVarCode"></span>
+  <button id="copyVars">CSS Vars</button>
+</div>
+
+
+</section>
+
+<script src="gradient.js"></script>
+</body>
+</html>
